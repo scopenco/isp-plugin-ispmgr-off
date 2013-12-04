@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Title: ispmgr_off plugin. Activate checkbox to disable ispmanager for domain.
+ * Author: Andrey Scopenco
+-->
+<mgrdata>
+        <plugin>
+            <name lang="en">Activate checkbox to disable /manager</name>
+            <description lang="en">Plugin activate checkbox to disable /manager for domain.</description>
+            <url>http://scopenco.net</url>
+            <version>0.1</version>
+            <lang>python</lang>
+            <author>Andrey Scopenco</author>
+            <site>https://github.com/scopenco/isp-plugin-ispmgr-off</site>
+            <contact>skype: scopenco; email:andrey@scopenco.net</contact>
+        </plugin>
+
+        <handler name="ispmgr_off.py" type="cgi">
+                <event before="yes">wwwdomain.edit</event>
+        </handler>
+        <metadata name="wwwdomain.edit" type="form">
+                <form>
+                        <field name="switchispmgr">
+                                <input type="checkbox" name="switchispmgr" />
+                        </field>
+                </form>
+        </metadata>
+</mgrdata>
