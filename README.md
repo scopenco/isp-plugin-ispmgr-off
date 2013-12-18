@@ -4,6 +4,7 @@ isp-plugin-ispmgr-off
 Documentation
 --------
 Russian description at http://blog.scopenco.net/disable-manager-in-ispmanager/
+
 This plugin for ISPmanager activate checkbox to disable /manager for domain.
 
 Installing
